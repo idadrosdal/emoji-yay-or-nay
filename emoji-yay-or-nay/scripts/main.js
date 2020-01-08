@@ -9,13 +9,3 @@ myImage.onclick = function() {
 		myImage.setAttribute('src', 'images/cover.png');
 	}
 }
-
-let popup = document.getElementById("popup-tea");
-popup.onmouseover = function() {
-	var popup = document.getElementById("myPopup");
-	popup.classList.add("show");
-}
-popup.onmouseout = function() {
-	var popup = document.getElementById("myPopup");
-	popup.classList.remove("show");
-}
