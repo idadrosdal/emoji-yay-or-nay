@@ -1,11 +1,8 @@
-console.log("Running script...");
-let myImage = document.getElementById("header-emoji");
-myImage.onclick = function() {
-	let mySrc = myImage.getAttribute('src');
-	console.log('Image on click: ' + mySrc);
-	if (mySrc === 'images/cover.png') {
-		myImage.setAttribute('src', 'images/cover2.png');
+let emojiElem = document.getElementById("header-emoji");
+emojiElem.onclick = function() {
+	if (emojiElem.innerHTML.normalize() == String.fromCodePoint(0x1F636).normalize()) {
+		emojiElem.innerHTML = "&#x1F92A";
 	} else {
-		myImage.setAttribute('src', 'images/cover.png');
+		emojiElem.innerHTML = "&#x1F636;";
 	}
 }

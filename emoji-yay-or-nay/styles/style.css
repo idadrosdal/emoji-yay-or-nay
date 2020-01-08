@@ -28,9 +28,11 @@ header {
 	font-size: 60px;
 }
 
+/*
 header img {
 	vertical-align: middle;
 }
+*/
 
 /*
 Navigation style
@@ -39,7 +41,7 @@ nav {
 	padding: 20px 20px 0px 20px;
 }
 
-nav ul {
+.nav-bar {
 	text-align: center;
 	list-style-type: none;
 	margin: 0;
@@ -48,18 +50,18 @@ nav ul {
 	background-color: white;
 }
 
-nav li {
+.nav-bar li {
 	display: inline;
 }
 
-nav li a {
+.nav-bar li a {
 	text-decoration: none;
 	color: #f7ae25;
 	padding: 16px;
 	text-align: center;
 }
 
-nav li a.active, nav li a:hover {
+.nav-bar li a.active, nav li a:hover {
 	color: white;
 	background-color: #f7ae25;
 }
