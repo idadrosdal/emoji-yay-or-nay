@@ -29,12 +29,6 @@ header {
 }
 
 /*
-header img {
-	vertical-align: middle;
-}
-*/
-
-/*
 Navigation style
 */
 nav {
@@ -61,7 +55,7 @@ nav {
 	text-align: center;
 }
 
-.nav-bar li a.active, nav li a:hover {
+.nav-bar li a:hover, .nav-bar li a.active {
 	color: white;
 	background-color: #f7ae25;
 }
