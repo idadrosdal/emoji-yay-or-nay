@@ -17,7 +17,6 @@ body {
   padding: 0 40px 0 40px;
   min-height: 100vh;
   background-color: white;
-  //border: 5px solid black;
 }
 
 /*
@@ -121,7 +120,7 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #ffdf38;
+  background-color: #FFD119;
 }
 
 
