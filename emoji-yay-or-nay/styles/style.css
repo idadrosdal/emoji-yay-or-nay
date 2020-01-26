@@ -12,27 +12,29 @@ html a {
 }
 
 body {
-  width: 700px;
+  width: 600px;
   margin: 0 auto;
+  padding: 0 40px 0 40px;
+  min-height: 100vh;
   background-color: white;
-  border: 5px solid black;
+  //border: 5px solid black;
 }
-
 
 /*
 Header style
 */
 header {
-	padding: 20px 20px 0px 20px;
 	text-align: center;
 	font-size: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /*
 Navigation style
 */
 nav {
-	padding: 20px 20px 0px 20px;
+	font-size: 16px;
 }
 
 .nav-bar {
@@ -40,22 +42,21 @@ nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	background-color: white;
 }
 
 .nav-bar li {
-	display: inline;
+	display: inline-block;
 }
 
 .nav-bar li a {
 	text-decoration: none;
 	color: #f7ae25;
-	padding: 16px;
+	margin: 16px;
+	padding: 4px;
 	text-align: center;
 }
 
-.nav-bar li a:hover, .nav-bar li a.active {
+.nav-bar li a:hover, .nav-bar li a:focus {
 	color: white;
 	background-color: #f7ae25;
 }
@@ -64,8 +65,63 @@ nav {
 Main section style
 */
 main {
-	padding: 20px 20px 0px 20px;
 	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+table {
+	width: 100%;
+	border: 2px solid #FFD119;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table caption {
+	text-align: left;
+	padding: 10px;
+	caption-side: top;
+}
+
+thead {
+	background-color: #FFD119;
+}
+
+thead th:nth-child(1) {
+	width: 20%;
+}
+
+thead th:nth-child(2) {
+	width: 20%;
+}
+
+thead th:nth-child(3) {
+	width: 60%;
+}
+
+th {
+	padding: 20px;
+}
+
+th, td {
+	padding: 5px;
+}
+
+tbody td:nth-child(1) {
+	text-align: center;
+	font-size: 200%;
+}
+
+tbody td:nth-child(2) {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffdf38;
 }
 
 
@@ -73,10 +129,11 @@ main {
 Footer style
 */
 footer {
-	padding: 20px 20px 0px 20px;
 	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-footer #emoji-ref {
+footer .reference {
 	float: right;
 }
